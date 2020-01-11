@@ -1,7 +1,8 @@
 # Ignore everything
-*
-
+/*
+/*/
 # But not these files...
 !.gitignore
-!reduxPage.js
+!/cli/
 !package.json
+!package-lock.json
