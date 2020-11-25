@@ -83,7 +83,7 @@ pageFiles.forEach(file => {
   let fileCode = '';
   if (fs.existsSync(templateFilePath)) {
     const fileTemplate = fs.readFileSync(templateFilePath, 'utf8');
-    const fileCode = fileTemplate.interpolate({
+    fileCode = fileTemplate.interpolate({
       componentName: componentName,
       ...file.params
     });
